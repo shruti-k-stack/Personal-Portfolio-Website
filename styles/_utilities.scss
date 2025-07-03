@@ -1,0 +1,541 @@
+// Colors
+
+.white {
+  color: $white;
+}
+
+.bg-white {
+  background: $white;
+}
+
+.text-black {
+  color: $black;
+}
+
+.grey-black {
+  color: $grey-black;
+}
+
+.grey-text {
+  color: $grey-text;
+}
+
+.primary {
+  color: $violet;
+}
+
+.anchor-tag {
+  &:hover {
+    color: $violet !important;
+  }
+}
+
+// Backgrounds
+
+.bg-lite-violet {
+  background: $lite-violet;
+}
+
+.bg-primary {
+  background: $violet;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+//Flex Directions
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+// inset properties
+
+.top {
+  top: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.left {
+  left: 0;
+}
+
+// Sizes
+
+.wp-100 {
+  width: 100%;
+}
+
+.hp-100 {
+  height: 100%;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.wh-36 {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.wh-18 {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.wh-16 {
+  width: 1rem;
+  height: 1rem;
+}
+
+// Line Height properties
+
+.lh-0 {
+  line-height: 0;
+}
+
+// Image Properties
+
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+// visibility Properties
+
+.v-show {
+  visibility: visible;
+}
+
+.v-hide {
+  visibility: hidden;
+}
+
+// Margin Properties
+
+// For Margins and Paddings
+
+// spacing map
+$spacing-map: (
+  0: 0,
+  0\.5: 0.5rem,
+  1: 1rem,
+  1\.5: 1.5rem,
+  2: 2rem,
+  2\.5: 2.5rem,
+  3: 3rem,
+  3\.5: 3.5rem,
+  4: 4rem,
+  4\.5: 4.5rem,
+  5: 5rem,
+);
+
+// spacing mixin
+@mixin spacing-modifier($property) {
+  @each $name, $space in $spacing-map {
+    &-#{$name} {
+      #{$property}: $space;
+    }
+  }
+}
+
+/* padding classes */
+.p {
+  @include spacing-modifier("padding");
+}
+
+/* padding-top classes */
+.pt,
+.py {
+  @include spacing-modifier("padding-top");
+}
+
+/* padding-bottom classes */
+.pb,
+.py {
+  @include spacing-modifier("padding-bottom");
+}
+
+/* padding-right classes */
+.pr,
+.px {
+  @include spacing-modifier("padding-right");
+}
+
+/* padding-left classes */
+.pl,
+.px {
+  @include spacing-modifier("padding-left");
+}
+
+/* margin classes */
+.m {
+  @include spacing-modifier("margin");
+}
+
+/* margin-top classes */
+.mt,
+.my {
+  @include spacing-modifier("margin-top");
+}
+
+/* margin-bottom classes */
+.mb,
+.my {
+  @include spacing-modifier("margin-bottom");
+}
+
+/* margin-right classes */
+.mr,
+.mx {
+  @include spacing-modifier("margin-right");
+}
+
+/* margin-left classes */
+.ml,
+.mx {
+  @include spacing-modifier("margin-left");
+}
+
+/* margin-top auto */
+.mt-auto,
+.my-auto {
+  margin-top: auto;
+}
+
+/* margin-bottom auto */
+.mb-auto,
+.my-auto {
+  margin-bottom: auto;
+}
+
+/* margin-right auto */
+.mr-auto,
+.mx-auto {
+  margin-right: auto;
+}
+
+/* margin-left auto */
+.ml-auto,
+.mx-auto {
+  margin-left: auto;
+}
+
+// Events
+
+.cursor {
+  cursor: pointer;
+}
+
+.p-events-none {
+  pointer-events: none;
+}
+
+// Transition Properties
+
+.trans-05 {
+  transition: 0.5s all ease-in;
+}
+
+// Text Properties
+
+.text-pre-line {
+  white-space: pre-line;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Font Sizes
+
+$font-size-map: (
+  1: 0.5rem,
+  2: 0.625rem,
+  3: 0.75rem,
+  4: 0.875rem,
+  5: 1rem,
+  6: 1.125rem,
+  7: 1.25rem,
+  8: 1.375rem,
+  9: 1.5rem,
+  10: 1.75rem,
+  11: 2rem,
+  12: 2.5rem,
+  13: 3rem,
+);
+
+// font size mixin
+@mixin font-size-modifier($property) {
+  @each $name, $font-size in $font-size-map {
+    &-#{$name} {
+      #{$property}: $font-size;
+    }
+  }
+}
+
+/* font size classes */
+.fs {
+  @include font-size-modifier("font-size");
+}
+
+// Font Familiees
+
+$font-family-map: (
+  lite: $font-lite,
+  rg: $font-rg,
+  bold: $font-bold,
+  header: $font-header,
+);
+
+// font-family mixin
+@mixin font-family-modifier($property) {
+  @each $name, $font-family in $font-family-map {
+    &-#{$name} {
+      #{$property}: $font-family;
+    }
+  }
+}
+
+/* font family classes */
+.font {
+  @include font-family-modifier("font-family");
+}
+
+// flex/grid gap map
+$row-col-gap-map: (
+  1: 0.0625rem,
+  2: 0.125rem,
+  3: 0.25rem,
+  4: 0.375rem,
+  5: 0.4375rem,
+  6: 0.5rem,
+  7: 0.625rem,
+  8: 0.75rem,
+  9: 1rem,
+  10: 1.25rem,
+  11: 1.5rem,
+  12: 1.75rem,
+  13: 2rem,
+);
+
+// flex/grid gap mixin
+@mixin gap-modifier($property) {
+  @each $name, $gap in $row-col-gap-map {
+    &-#{$name} {
+      #{$property}: $gap;
+    }
+  }
+}
+
+/* flex/grid gap classes */
+.gap {
+  @include gap-modifier("gap");
+}
+
+// Border Radius
+
+$border-radius-map: (
+  1: 0.5rem,
+  2: 0.625rem,
+  3: 0.75rem,
+  4: 0.875rem,
+  5: 1rem,
+  6: 1.125rem,
+  7: 1.25rem,
+  8: 1.375rem,
+  9: 1.5rem,
+  10: 1.75rem,
+  11: 2rem,
+  12: 2.5rem,
+  circle: 50%,
+  pill: 50rem,
+);
+
+// Border Radius Mixin
+@mixin border-radius-modifier($property) {
+  @each $name, $border-radius in $border-radius-map {
+    &-#{$name} {
+      #{$property}: $border-radius;
+    }
+  }
+}
+
+/* Border Radius classes */
+.br {
+  @include border-radius-modifier("border-radius");
+}
+
+// Position Properties
+
+$position-map: (
+  rel: relative,
+  abs: absolute,
+  stk: sticky,
+  fix: fixed,
+  stat: static,
+);
+
+// position mixin
+@mixin position-modifier($property) {
+  @each $name, $position in $position-map {
+    &-#{$name} {
+      #{$property}: $position;
+    }
+  }
+}
+
+/* position classes */
+.p {
+  @include position-modifier("position");
+}
+
+// Display Properties
+
+$display-map: (
+  flex: flex,
+  block: block,
+  none: none,
+);
+
+// display mixin
+@mixin display-modifier($property) {
+  @each $name, $display in $display-map {
+    &-#{$name} {
+      #{$property}: $display;
+    }
+  }
+}
+
+/* display classes */
+.d {
+  @include display-modifier("display");
+}
+
+// Justify Properties
+
+$justify-map: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+);
+
+// justify mixin
+@mixin justify-modifier($property) {
+  @each $name, $justify in $justify-map {
+    &-#{$name} {
+      #{$property}: $justify;
+    }
+  }
+}
+
+/* justify classes */
+.jst {
+  @include justify-modifier("justify-content");
+}
+
+// Align Properties
+
+$align-map: (
+  start: flex-start,
+  center: center,
+  end: flex-end,
+);
+
+// align mixin
+@mixin align-modifier($property) {
+  @each $name, $align in $align-map {
+    &-#{$name} {
+      #{$property}: $align;
+    }
+  }
+}
+
+/* align classes */
+.align {
+  @include align-modifier("align-items");
+}
+
+// Overflow Properties
+
+$overflow-map: (
+  auto: auto,
+  hide: hidden,
+  x: auto hidden,
+  y: hidden auto,
+);
+
+// overflow mixin
+@mixin overflow-modifier($property) {
+  @each $name, $overflow in $overflow-map {
+    &-#{$name} {
+      #{$property}: $overflow;
+    }
+  }
+}
+
+/* overflow classes */
+.ovf {
+  @include overflow-modifier("overflow");
+}
+
+// Text align Properties
+
+$text-align-map: (
+  left: left,
+  center: center,
+  right: right,
+);
+
+// text-align mixin
+@mixin text-align-modifier($property) {
+  @each $name, $text-align in $text-align-map {
+    &-#{$name} {
+      #{$property}: $text-align;
+    }
+  }
+}
+
+/* overflow classes */
+.text {
+  @include overflow-modifier("text-align");
+}
+
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//
+.flex-1 {
+  flex: 1 !important;
+}
