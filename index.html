@@ -5,20 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <title>My Portfolio</title>
 </head>
 <body>
-    <nav id="navbar" class="navtab">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section class="home">
+       <header>
+        <div id="navbar-placeholder"></div>
+    </header>
+
         <div id="home" class="home-content">
             <div class="home-text">
             <h2> Hi, I'm</h2>
@@ -28,11 +23,11 @@
         <img src="../assets/profile.png" alt="Profile Picture" class="profile-pic">
         </div>
         <div id="home-button">
-            <button type="button" class="btn btn-primary"> Hire Me</button>
+            <button type="button" onclick="location.href='about.html'" class="btn btn-primary"> About Me</button>
             <button type="button" class="btn btn-primary"> Contact</button>
         </div>
-    </section>
 
+    <script src="script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

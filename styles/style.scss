@@ -41,38 +41,36 @@ body {
     }
 }
 
-.home {
-    height: 100vh;
+
+
+.home-content {
     color: $grey-black;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 
-    .home-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        text-align: center;
+    .home-text {
+        text-align: left;
 
-        .home-text {
-            text-align: left;
-
-            h2{
-                font-size: 1.5rem;
-                margin: 0.5rem 0;
-                color: $grey-text; 
-            }
-
-            h1 {
-            font-size: 2.5rem;
-            margin: 1rem 0;
-            color: $grey-text;
-        }
+        h2{
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+            color: $grey-text; 
         }
 
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+        h1 {
+        font-size: 2.5rem;
+        margin: 1rem 0;
+        color: $grey-text;
+    }
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 }

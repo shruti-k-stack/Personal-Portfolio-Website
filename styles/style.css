@@ -870,31 +870,28 @@ body {
   color: #005ce6;
 }
 
-.home {
-  height: 100vh;
+.home-content {
   color: #221f17;
   padding: 1rem;
-}
-.home .home-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
 }
-.home .home-content .home-text {
+.home-content .home-text {
   text-align: left;
 }
-.home .home-content .home-text h2 {
+.home-content .home-text h2 {
   font-size: 1.5rem;
   margin: 0.5rem 0;
   color: rgba(0, 0, 0, 0.5);
 }
-.home .home-content .home-text h1 {
+.home-content .home-text h1 {
   font-size: 2.5rem;
   margin: 1rem 0;
   color: rgba(0, 0, 0, 0.5);
 }
-.home .home-content .profile-pic {
+.home-content .profile-pic {
   width: 150px;
   height: 150px;
   border-radius: 50%;
