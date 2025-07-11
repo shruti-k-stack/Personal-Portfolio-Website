@@ -100,12 +100,12 @@
 
 .object-contain {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .object-cover {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .v-show {
@@ -838,6 +838,10 @@
   flex: 1 !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nunito", sans-serif;
   color: white;
@@ -845,6 +849,16 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+main {
+  padding-top: 60px;
 }
 
 .bg-color {
@@ -856,8 +870,8 @@ body {
   display: flex;
   justify-content: right;
   padding: 1rem;
-  border: 1px solid #e7e7e7;
-  background-color: #f3f3f3;
+  background-color: #16522a;
+  border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .navtab ul {
@@ -869,62 +883,64 @@ body {
 }
 .navtab ul li a {
   text-decoration: none;
-  color: #221f17;
   font-weight: 700;
   transition: color 0.3s;
+  color: white;
 }
 .navtab ul li a:hover {
   color: #005ce6;
 }
 
-.home {
+.index {
   padding: 1rem;
   margin: 0.5rem;
 }
-.home .home-content {
+.index .home {
+  background-color: rgb(182, 219, 78);
+  border-radius: 10px;
+  padding: 1rem;
+  color: rgb(8, 1, 49);
+}
+.index .home-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
 }
-.home .home-content .home-text {
+.index .home-content .home-text {
   text-align: left;
 }
-.home .home-content .home-text h2 {
-  font-size: 1.5rem;
+.index .home-content .btn {
+  font-weight: 700;
 }
-.home .home-content .home-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: unset;
+.index .home-content .btn :hover {
+  color: cyan;
 }
-.home .home-content .profile-pic {
+.index .profile-pic {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.home .home-btn {
-  display: flex;
-  gap: 20px;
-}
-.home .home-btn .btn {
-  margin: 0.5rem 0;
-  font-weight: 700;
-}
-.home .home-btn .btn :hover {
-  color: cyan;
-}
-.home .about-content {
+
+.about-content {
   margin-top: 0.5rem;
 }
-.home .about-content h1 {
-  font-size: 2.5rem;
+
+.project-section .project-list {
+  text-align: left;
+  margin-bottom: 0.5rem;
 }
-.home .about-content p {
-  font-size: 1rem;
+.project-section h4 {
+  padding-left: 2rem;
 }
 
-.profile-content h1 {
+h2 {
+  font-size: 2rem;
+}
+
+h1 {
   font-style: italic;
   color: #869c4b;
-}/*# sourceMappingURL=style.css.map */
+  font-size: 2.5rem;
+} /*# sourceMappingURL=style.css.map */

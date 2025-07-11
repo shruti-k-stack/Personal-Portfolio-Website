@@ -1,45 +1,77 @@
 <!-- File: src/index.html -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/style.css">
-
-</head>
-<body>
-       <header>
-        <div id="navbar-placeholder"></div>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar-placeholder"></div>
     </header>
-
-    <div class="home bg-color border">
-        <div id="home" >
-            <div class="home-content">
+    <main>
+      <div class="index bg-color border">
+        <div id="home" class="home">
+          <div class="home-content">
             <div class="home-text">
-            <h2> Hi, I'm</h2>
-            <h2>Shruti Khandagiri</h2>
-        <h1>Welcome to My Portfolio</h2>
+              <h1>Welcome to My Portfolio</h1>
+              <h2>Hi, I'm</h2>
+              <h2>Shruti Khandagiri</h2>
+              <button
+                type="button"
+                onclick="location.href='profile.html'"
+                class="btn btn-info"
+              >
+                My Profile
+              </button>
             </div>
-        <img src="../assets/profile.png" alt="Profile Picture" class="profile-pic">
+            <img
+              src="../assets/profile.png"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
+          </div>
         </div>
-        <div class="home-btn">
-            <button type="button" onclick="location.href='profile.html'" class="btn btn-info"> My Profile</button>
-            <button type="button" class="btn btn-info"> Contact</button>
-            </div>
-            </div>
-         <div id="about" class="about-content">
-    <h1>A Bit About Me</h1>
-    <p>
-        Hi there! I'm a passionate UI React Developer dedicated to building engaging and user-friendly interfaces. I thrive on bringing creative visions to life with clean, efficient React code, and I'm always eager to explore new technologies to enhance the user experience. I love collaborating with designers and backend developers to deliver comprehensive solutions that truly make an impact. Let's build something amazing together!
-    </p>
-    </div>
-    </div>
+        <div id="about" class="about-content">
+          <h1>A Bit About Me</h1>
+          <p>
+            Hi there! I'm a passionate UI React Developer dedicated to building
+            engaging and user-friendly interfaces. I thrive on bringing creative
+            visions to life with clean, efficient React code, and I'm always
+            eager to explore new technologies to enhance the user experience. I
+            love collaborating with designers and backend developers to deliver
+            comprehensive solutions that truly make an impact. Let's build
+            something amazing together!
+          </p>
+        </div>
+        <div id="projects" class="project">
+          <h1>Projects</h1>
+          <h2>Projects Overview</h2>
+          <p>
+            A web-based internal ERP system designed to streamline academic and
+            administrative activities between students, teachers, and
+            administrators.
+          </p>
+          <h4>Key Features:</h4>
+          <ul>
+            <li></li>
+            <li>
+              Gained practical experience in modular component design, state
+              management, and working with mock APIs.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
 
     <script src="script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+  </body>
 </html>
