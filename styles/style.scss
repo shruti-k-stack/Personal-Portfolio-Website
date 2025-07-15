@@ -35,7 +35,6 @@ main {
   justify-content: right;
   padding: 1rem;
   background-color: $dark-green;
-  border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   ul {
@@ -67,7 +66,7 @@ main {
   .home {
     background-color: rgb(182, 219, 78);
     border-radius: 10px;
-    padding: 1rem;
+    padding: 2rem;
     color: rgb(8, 1, 49);
   }
 
@@ -75,7 +74,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
+    text-align: left;
 
     .home-text {
       text-align: left;
@@ -91,15 +90,9 @@ main {
   }
 
   .profile-pic {
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
-}
-
-.about-content {
-  margin-top: 0.5rem;
 }
 
 .project-section {
@@ -111,6 +104,19 @@ main {
   h4 {
     padding-left: 2rem;
   }
+}
+.profile-list{
+   text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.about-list{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  padding: 0 12.5rem;
 }
 
 h2 {
