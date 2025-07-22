@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+<body>
+     <header>
+      <div id="navbar-placeholder"></div>
+    </header>
+
+    <main>
+         <div class="container bg-info text-dark">
+        <div class="p-2">
+        <fieldset>
+        <h2>Ask Me a Question</h2>
+  <p>Have something on your mind? Feel free to reach out!</p>
+        <form action="https://formspree.io/f/{form_id}" method="post">
+          <div class="m-2 p-2">
+            <label for="firstName">First Name:</label><br>
+        <input type="text" placeholder="First Name" class="form-control" required>
+          </div>
+          <div class="m-2 p-2">
+            <label for="lastName">Last Name:</label><br>
+        <input type="text" placeholder="Last Name" class="form-control" required>
+        </div>
+        <div class="m-2 p-2">
+          <label for="email">Email:</label><br>
+        <input type="email" placeholder="Email: name@example.com" class="form-control" required>
+        </div>
+        <div class="m-2 p-2">
+          <label for="phone">Phone (optional):</label><br>
+          <input type="tel" id="phone" placeholder="Phone">
+        </div>
+        <div class="m-2 p-2">
+          <label for="question">What would you like to ask?</label><br>
+          <textarea
+    placeholder="What would you like to ask?"
+    required
+    rows={4}></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </fieldset>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="contact" class="index bg-color border">
+        <div class="home">
+        <h2>Contact Me</h2>
+        <h6>Email: <a href="shrutikhandagiri2@gmail.com">shrutikhandagiri2@gmail.com</a></h6>
+        <h6>Phone: 8249415122</h6>
+        <div>
+         <a href="https://www.linkedin.com/in/shruti-khandagiri-2b7498135/" role="button"><img src="./assets/linkedin.png" alt="linkedIn" width="50"></a>
+         <a href="https://github.com/shruti-k-stack/" role="button"><img src="./assets/github.png" alt="github" width="50"></a>
+         </div>
+         </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
